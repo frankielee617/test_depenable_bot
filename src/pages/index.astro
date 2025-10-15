@@ -1,14 +1,17 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Front from "../components/svelte/front.svelte";
+import Slider from "../components/svelte/slider.svelte";
 import * as m from "../paraglide/messages.js";
 ---
 
 <Layout>
+  <Slider client:only />
   <div class="container">
     <div class="title">{m.learning_for()}</div>
     <div class="title-strong">{m.anyone_anywhere_anytime()}</div>
     <img src="/illus01.png" alt="" width="1000" />
+
     <div style="margin-bottom:1rem;"></div>
     <p>
       {m.mindtree_is()}

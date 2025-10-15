@@ -18,6 +18,7 @@
     "@inlang/paraglide-astro": "^0.2.2",
     "astro": "^4.11.5",
     "svelte": "^4.2.18",
+    "svelte-carousel": "^1.0.25",
     "typescript": "^5.5.3"
   },
   "optionalDependencies": {
