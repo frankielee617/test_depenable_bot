@@ -1,0 +1,29 @@
+{
+  "name": "receptive-rotation",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/node": "^8.3.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/svelte": "^5.6.0",
+    "@inlang/paraglide-astro": "^0.2.2",
+    "astro": "^4.11.5",
+    "svelte": "^4.2.18",
+    "typescript": "^5.5.3"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-musl": "4.9.5"
+  },
+  "devDependencies": {
+    "sass": "^1.80.6"
+  }
+}

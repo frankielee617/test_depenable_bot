@@ -1,0 +1,23 @@
+<svg width="211" height="211" viewBox="0 0 211 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="29.8828" y="103.032" width="100.383" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect width="100.383" height="11.0017" rx="5.50086" transform="matrix(-1 0 0 1 181.262 168.432)" fill="#FFCC19"/>
+<rect x="29.8828" y="147.076" width="68.8693" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect x="133.72" y="147.076" width="47.5413" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect x="138.593" y="103.032" width="42.6678" height="11.0017" rx="5.50086" fill="#4F93F8"/>
+<rect width="42.6678" height="11.0017" rx="5.50086" transform="matrix(-1 0 0 1 72.5518 168.432)" fill="#FFCC19"/>
+<rect x="103.528" y="147.075" width="26.7377" height="11.0017" rx="5.50086" fill="#4F93F8"/>
+<rect x="149.23" y="125.72" width="32.0319" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect x="103.528" y="125.72" width="42.6678" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect x="77.3047" y="125.72" width="23.1885" height="11.0017" rx="5.50086" fill="#FFCC19"/>
+<rect x="31.6035" y="125.72" width="42.6678" height="11.0017" rx="5.50086" fill="#4F93F8"/>
+<path d="M76.4659 76.4927V76.4927C76.4659 83.2988 70.9485 88.8162 64.1424 88.8162L52.9375 88.8162" stroke="#4F93F8" stroke-width="2"/>
+<path d="M116.613 86.3508L127.818 86.3508C134.624 86.3508 140.142 80.8334 140.142 74.0273V74.0273L140.142 45.4908" stroke="#4F93F8" stroke-width="2"/>
+<circle cx="169.015" cy="56.8922" r="9.08826" fill="#4F93F8"/>
+<circle cx="52.9379" cy="39.995" r="9.08826" fill="#4F93F8"/>
+<circle cx="76.4662" cy="68.0638" r="9.08826" fill="#4F93F8"/>
+<circle cx="140.142" cy="39.995" r="9.08826" fill="#4F93F8"/>
+<circle cx="9.08826" cy="9.08826" r="9.08826" transform="matrix(-1 0 0 1 125.701 49.0833)" fill="#4F93F8"/>
+<line x1="170.015" y1="56.8921" x2="170.015" y2="105.044" stroke="#4F93F8" stroke-width="2"/>
+<line x1="53.9375" y1="43.1074" x2="53.9375" y2="125.72" stroke="#4F93F8" stroke-width="2"/>
+<path d="M116.113 60.353L116.113 149.395" stroke="#4F93F8" stroke-width="2"/>
+</svg>

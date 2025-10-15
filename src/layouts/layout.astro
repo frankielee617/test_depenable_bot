@@ -1,0 +1,220 @@
+---
+import * as m from "../paraglide/messages.js";
+import { languageTag } from "../paraglide/runtime";
+import Footer from '../components/Footer.astro'
+import {  getRelativeLocaleUrlList } from 'astro:i18n';
+const options = [
+  { value: 'en', label: 'EN' },
+  { value: 'bm', label: 'BM' },
+  { value: 'cn', label: 'CN' },
+];
+const props = Astro.props;
+// const localeUrls = getRelativeLocaleUrlList();
+const lang = languageTag()
+---
+<!doctype html>
+<html lang={props.language}>
+  <head>
+        <title>Welcome to Mindtree</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://mindtree.com.my">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mindtree Solutions">
+    <meta property="og:description" content="Learning for all™">
+    <meta property="og:image" content="https://mindtree.com.my/illus03.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@your-twitter-handle">
+    <meta name="twitter:title" content="Mindtree Solutions">
+    <meta name="twitter:description" content="Learning for all™">
+    <meta name="twitter:image" content="https://mindtree.com.my/illus03.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/global.css">
+  </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKFZC9ZTRT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QKFZC9ZTRT');
+</script>
+  <body>
+    <div class="mobile_menu_icon">
+      <div class="custom-select" style="display:flex;">
+        <select class="" id="mobile_dropdown">
+                                      {options.map((o)=>(<option value={o.value} selected={o.value==lang}>{o.label}</option>))}
+        </select>
+      </div>
+      <div class="" id="burger_menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 24 24" {...props}>
+          <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 8h12M6 12h12M6 16h12" />
+        </svg>
+      </div>
+    </div>
+    <div class="header" style="padding:16px; background: #ffffffee; position: sticky; top:0;align-items:center;justify-content:space-between; flex-wrap: wrap; row-gap: 8px;">
+      <div style="flex-basis: 300px; flex-grow: 1; cursor:pointer;" id="logo">
+        <img src="/mindtree_navi_logo.svg" alt="" height="50" style="width:auto;">
+      </div>
+      <div class="mobile_hide" style="column-gap:8px; row-gap:8px; flex-basis: 300px; flex-grow: 2; flex-wrap: wrap;align-items: center; text-align:center;">
+        <div class="menuitem"><a href="/blog">{m.blog()}</a></div>
+        <!-- <div class="menuitem"><a href={lang == "en" ? "/about_us" : "/" + lang + "/about_us"}>{m.about_us()}</a></div>
+        <div class="menuitem"><a href={lang == "en" ? "/contact_us" : "/" + lang + "/contact_us"}>{m.contact_us()}</a></div>
+        <div class="menuitem highlightitem"><span class="highlightitem"><a href="/app/csr">{m.csr()}</a></span></div>
+        <div class="menuitem highlightitem"><span class="highlightitem"><a href="/app/register_ngo">{m.ngos()}</a></span></div>
+        <div class="menuitem"><a href="/app/login">{m.login()}</a></div> -->
+<!-- <div class="custom-select">
+    <select class="custom-select" id="dropdown">
+{options.map((o)=>(<option value={o.value} selected={o.value==lang}>{o.label}</option>))}
+    </select>
+</div> -->
+</div>
+        <!-- <div><a href="/news">News</a></div> -->
+      </div>
+    </div>
+    <div class="mobile_menu" id="mobile_menu">
+      <div style="display:flex; width:110vw; height:100vh; align-items:center; justify-content:center;">
+        <div style="width:60%;">
+          <div class="mobilemenuitem" id="home"><a href={lang=="en"? "/":("/"+lang)}>{m.home()}</a></div>
+          <div class="mobilemenuitem" id="app"><a href="/blog">{m.blog()}</a></div>
+          <!-- <div class="mobilemenuitem" id="about"><a href={lang == "en" ? "/about_us" : "/" + lang + "/about_us"}>{m.about_us()}</a></div>
+          <div class="mobilemenuitem" id="contact"><a href={lang == "en" ? "/contact_us" : "/" + lang + "/contact_us"}>{m.contact_us()}</a></div>
+          <div class="mobilemenuitem"><span class="highlightitem"><a href="/app/csr">{m.csr()}</a></span></div>
+          <div class="mobilemenuitem"><span class="highlightitem"><a href="/app/register_ngo">{m.ngos()}</a></span></div>
+          <div class="mobilemenuitem"><a href="/app/login">{m.login()}</a></div> -->
+          
+        </div>
+      </div>
+    </div>
+    <!-- <div class="boxlink shake"  style="flex-basis: 100px;flex-grow: 1; cursor:pointer;text-align:center;">
+      <div class="boxbutton hoverable" id="box_button1">
+        <img src="/cta_signup.svg" alt="" class="boximage"/>
+</div>
+        <div style="margin-top:8px;"></div>
+        <div class="boxbutton hoverable" id="box_button2">
+        <img src="/cta_poll.svg" alt="" class="boximage">
+        </div>
+    </div> -->
+    <slot />
+    
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .menuitem{
+  flex-grow: 1;"
+  }
+
+.custom-select {
+	position: relative;
+}
+
+.custom-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 100%;
+	font-size: 18px;
+	padding: 5px 10px 5px 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #C4D1EB;
+	border-radius: 12px;
+	color: #000000;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+}
+
+.custom-select select:focus {
+	background: #F2F2F2;
+	border: 1px solid #5A7EC7;
+	border-radius: 5px;
+}
+
+.custom-select::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	right: 10px;
+	transform: translate(0, -50%);
+	width: 12px;
+	height: 12px;
+	background-color: #000000;
+	clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
+}
+</style>
+<script define:vars={{lang}}>
+  // Find our component DOM on the page.
+  
+  const button = document.getElementById("box_button1");
+    button.addEventListener('click', () => window.open("/app", "_self"))
+  const button2 = document.getElementById("box_button2");
+  button2.addEventListener('click', () => window.open("/app/survey", "_self"))
+  const mobile_menu_icon = document.getElementById("burger_menu");
+  const menu = document.getElementById("mobile_menu");
+  mobile_menu_icon.addEventListener('click', () => {
+    menu.classList.toggle("menu_show");
+  })
+
+console.log("current lang")
+  console.log(lang)
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const logo = document.getElementById('logo')
+    logo.addEventListener('click', ()=>{
+        const selectedValue = localStorage.getItem("locale");
+        const final_link = (selectedValue== undefined || selectedValue == 'en' )? ("/"):("/"+selectedValue +"/")
+        // console.log(final_link)
+        window.open(final_link, "_self")
+    })
+
+    const dropdown = document.getElementById('dropdown');
+    dropdown.addEventListener('change', function() {
+        // console.log(window.location.pathname)
+        if (window.location.pathname.indexOf("blog") > -1) {
+          console.log("this is blog, no locale")
+          alert("Blog only available in English.")
+        }else{
+        const selectedValue = dropdown.value;
+        localStorage.setItem('locale', selectedValue)
+        const currentlink = window.location.pathname 
+        const link_arr = currentlink.split("/")
+        // console.log(link_arr.at(-1))
+        const final_link = selectedValue == 'en'? ("/"+link_arr.at(-1)):("/"+selectedValue +"/"+link_arr.at(-1))
+        // console.log(final_link)
+        window.open(final_link, "_self")
+                }
+    });
+
+    const mobiledropdown = document.getElementById('mobile_dropdown');
+    mobiledropdown.addEventListener('change', function() {
+        if (window.location.pathname.indexOf("blog") > -1) {
+          console.log("this is blog, no locale")
+          alert("Blog only available in English.")
+        }else{
+        const selectedValue = mobiledropdown.value;
+        // console.log(selectedValue)
+        localStorage.setItem('locale', selectedValue)
+
+        // console.log(window.location.pathname)
+        const currentlink = window.location.pathname 
+        const link_arr = currentlink.split("/")
+        // console.log(link_arr.at(-1))
+        const final_link = selectedValue == 'en'? ("/"+link_arr.at(-1)):("/"+selectedValue +"/"+link_arr.at(-1))
+        // console.log(final_link)
+        window.open(final_link, "_self")
+        }
+    });
+});
+
+
+</script>

@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/layout.astro";
+
+const allPosts = await getCollection("blog");
+const sortedNewsPosts = allPosts.sort(
+  (a, b) => new Date(b.data.date) - new Date(a.data.date)
+);
+console.log(allPosts);
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="container" style="min-height: 50vh;">
+    <div class="subtitle colorsecondary">Blog</div>
+    {
+      sortedNewsPosts.map((post) => (
+        <div style="padding-bottom:8px;margin-bottom:16px;border-bottom:1px solid var(--gray);">
+          <a class="smalltitle colorprimary" href={"/blog/" + post.slug}>
+            {post.data.title}{" "}
+            <span class="colorgray" style="font-size: 1rem;">
+              {post.data.date.toLocaleDateString("en-us", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </span>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</Layout>
