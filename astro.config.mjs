@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 // import sitemap from '@astrojs/sitemap';
 import node from '@astrojs/node';
 import svelte from "@astrojs/svelte";
-import paraglide from '@inlang/paraglide-astro';
+import { paraglideVitePlugin } from "@inlang/paraglide-js";
 // 
 import mdx from "@astrojs/mdx";
 
@@ -13,17 +13,21 @@ export default defineConfig({
   // adapter: node({
   //   mode: 'standalone'
   // }),
+  adapter: node({ mode: "standalone" }),
   devToolbar: {
     enabled: false
   },
   server: {
     port: 3000
   },
-  integrations: [svelte(), paraglide({
-    project: "./project.inlang",
-    outdir: "./src/paraglide"
-  }), mdx()],
+  integrations: [svelte(), mdx()],
   vite: {
+    	plugins: [
+		paraglideVitePlugin({
+			project: "./project.inlang",
+			outdir: "./src/paraglide",
+		}),
+	],
     optimizeDeps: {
       esbuildOptions: {
         define: {
