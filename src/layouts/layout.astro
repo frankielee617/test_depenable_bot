@@ -1,6 +1,6 @@
 ---
 import * as m from "../paraglide/messages.js";
-import { languageTag } from "../paraglide/runtime";
+import { getLocale } from "../paraglide/runtime";
 import Footer from '../components/Footer.astro'
 import {  getRelativeLocaleUrlList } from 'astro:i18n';
 const options = [
@@ -10,7 +10,7 @@ const options = [
 ];
 const props = Astro.props;
 // const localeUrls = getRelativeLocaleUrlList();
-const lang = languageTag()
+const lang = getLocale()
 ---
 <!doctype html>
 <html lang={props.language}>
