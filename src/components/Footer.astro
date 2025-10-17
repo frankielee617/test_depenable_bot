@@ -1,8 +1,8 @@
 ---
 import * as m from "../paraglide/messages.js";
-import { languageTag } from "../paraglide/runtime";
+import { getLocale } from "../paraglide/runtime";
 const today = new Date();
-const lang = languageTag();
+const lang = getLocale();
 ---
 
 <footer>
@@ -55,10 +55,7 @@ const lang = languageTag();
           ></path>
         </svg>
       </a>
-      <a
-        href="#"
-        target="_blank"
-      >
+      <a href="#" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
