@@ -1189,11 +1189,6 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.52.5.tgz#7859e196501cc3b3062d45d2776cfb4d2f3a9350"
   integrity sha512-arCGIcuNKjBoKAXD+y7XomR9gY6Mw7HnFBv5Rw7wQRvwYLR7gBAgV7Mb2QTyjXfTveBNFAtPt46/36vV9STLNg==
 
-"@rollup/rollup-linux-x64-musl@4.9.5":
-  version "4.9.5"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.9.5.tgz#fe0b20f9749a60eb1df43d20effa96c756ddcbd4"
-  integrity sha512-ezyFUOwldYpj7AbkwyW9AJ203peub81CaAIVvckdkyH8EvhEIoKzaMFJj0G4qYJ5sw3BpqhFrsCc30t54HV8vg==
-
 "@rollup/rollup-openharmony-arm64@4.52.5":
   version "4.52.5"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.52.5.tgz#85d0df7233734df31e547c1e647d2a5300b3bf30"
