@@ -566,41 +566,54 @@
     "@inlang/message-lint-rule" "1.4.7"
     "@inlang/plugin" "2.4.14"
 
-"@inlang/paraglide-astro@^0.2.2":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-astro/-/paraglide-astro-0.2.6.tgz#737e404045bbe5a4fc45418eaf06b83b33a8d6d0"
-  integrity sha512-4XwY0+yuMkEQAEERl7Q6E8VKm12Z8GVFTi/pjLy7DpL3NdO4rt+RjylneGgyiWX1ebLMIytu/jy6jDxmY/S/Sg==
+"@inlang/paraglide-astro@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-astro/-/paraglide-astro-0.4.1.tgz#af5e020d44edbd83e124ec8fdac4e00c7a957cc0"
+  integrity sha512-oPNJmgWArSB3Qx+LdEHONCD/9zVOJFw5ZhGUY1hcFBMU727W6Ye2BaV3hLBM2bAa7Oghb1JKr01Q5IfalWUXUw==
   dependencies:
-    "@inlang/paraglide-vite" "1.2.77"
+    "@inlang/paraglide-vite" "1.4.0"
 
-"@inlang/paraglide-js@1.11.3":
-  version "1.11.3"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-1.11.3.tgz#7aad7599da1b266b9dfa1e73f6aa3b45c9ccf408"
-  integrity sha512-WVNraTylfZty0kt5EQNh8yx0WUJbtYEmc8YoNRRSUWB0rqeCh8a9xIQnmzZxBMf7IL7es+Ppiqx15py7mukJRw==
+"@inlang/paraglide-js@1.11.8":
+  version "1.11.8"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-js/-/paraglide-js-1.11.8.tgz#01bbd55080d25e1cae21b164f00f7670290b23d6"
+  integrity sha512-PxzrmDP63fbMNF4/AtiLFTnUodFxVbOkLpIrOzPZvNuLg0wCWnsaBfNT87/rNjL/A7ZPzEBmuDi0P2pn8iB0Fw==
   dependencies:
     "@inlang/detect-json-formatting" "1.0.0"
+    "@inlang/language-tag" "1.5.1"
+    "@inlang/plugin-message-format" "2.2.0"
+    "@inlang/recommend-ninja" "0.1.1"
+    "@inlang/recommend-sherlock" "0.1.1"
+    "@inlang/sdk" "0.37.0"
+    "@lix-js/client" "2.2.1"
+    "@lix-js/fs" "2.2.0"
     commander "11.1.0"
     consola "3.2.3"
     dedent "1.5.1"
     json5 "2.2.3"
     posthog-node "^4.0.1"
 
-"@inlang/paraglide-unplugin@1.8.8":
-  version "1.8.8"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-unplugin/-/paraglide-unplugin-1.8.8.tgz#f9ca4248ffe2b1827c1994ef58ab2be71526821b"
-  integrity sha512-2mQzzRwJY36Z9wsnielmec0uMhUOgTje/xMy9pG7h+voO2rrX89MQbEKBHkRzkb0yq090oILDFq3rUXRCgW07g==
+"@inlang/paraglide-unplugin@1.9.5":
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-unplugin/-/paraglide-unplugin-1.9.5.tgz#c3ba054cc0d2cc1fc0e09cfbdb0a54592f285da5"
+  integrity sha512-5KklLBvl/y+R4SccWH74USTGQNFW5IwEyMLQ3WIHX9cHX2pnnA5wGqQxYg3EcgCyErHLc3+sm7EMNB5Z0dSeTg==
   dependencies:
-    "@inlang/paraglide-js" "1.11.3"
-    "@inlang/sdk" "0.36.3"
+    "@inlang/paraglide-js" "1.11.8"
+    "@inlang/sdk" "0.37.0"
     "@lix-js/client" "2.2.1"
+    typescript "^5.5.2"
     unplugin "^1.14.1"
 
-"@inlang/paraglide-vite@1.2.77":
-  version "1.2.77"
-  resolved "https://registry.yarnpkg.com/@inlang/paraglide-vite/-/paraglide-vite-1.2.77.tgz#8b99e7b2ea0b3ffa849f66805d7596fffb976033"
-  integrity sha512-rn2hUcgYnQOhHc4qNerMc7AUqBN4WTINhm8MwP5L0f/EIJLsQ7jDLMrZRiBOkFuMBj7p53oHElhwk+juBqkCAw==
+"@inlang/paraglide-vite@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@inlang/paraglide-vite/-/paraglide-vite-1.4.0.tgz#9165ac487a3745a0726c18a38005f4c83a7cfc84"
+  integrity sha512-JXfHOOhXNMlHkouO6nuYoIYL5iqM6Y6FtLNq64nIUOpVnXSQfyYCF73lHYE7ZqRMQxoCvUWnqAlyUb4MTmP2IQ==
   dependencies:
-    "@inlang/paraglide-unplugin" "1.8.8"
+    "@inlang/paraglide-unplugin" "1.9.5"
+
+"@inlang/plugin-message-format@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@inlang/plugin-message-format/-/plugin-message-format-2.2.0.tgz#25f41c02a56a0671698f8c5cb8da3eda69e8e9b0"
+  integrity sha512-6MJLExr3OLqbR8gCP4UEgNMgdaJFFCug2GLmFwid7Ana4kObnbCA33YN3m3eN8p+lmnv7zpfW7oeyTZXZLoptg==
 
 "@inlang/plugin@2.4.14":
   version "2.4.14"
@@ -622,6 +635,27 @@
     "@inlang/json-types" "1.1.0"
     "@inlang/language-tag" "1.5.1"
 
+"@inlang/recommend-ninja@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@inlang/recommend-ninja/-/recommend-ninja-0.1.1.tgz#778f4f4e300c44b1333039a00d246258969d0e85"
+  integrity sha512-dthW8SA6LHUhPFXwKxYy92PG4dg4KeIS0jbgpplXxgoQAeouP6DHEa87kva2DXbk3kUbNz+/MFPjyaygBfamog==
+  dependencies:
+    "@inlang/sdk" "0.36.3"
+    "@lix-js/client" "2.2.1"
+    "@lix-js/fs" "2.2.0"
+    "@sinclair/typebox" "^0.31.17"
+    js-yaml "^4.1.0"
+
+"@inlang/recommend-sherlock@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@inlang/recommend-sherlock/-/recommend-sherlock-0.1.1.tgz#777bbd18014424ba3cd8ebf73aef33a9bb99aa76"
+  integrity sha512-8qZ8FJ/QqVh6YqKmHo3SxI4ENM0O80TCzETm+hxeQ2JzPKPFYucFINpLvUygiLFp/hJwhoI5TjRz6jNI2QdfMQ==
+  dependencies:
+    "@inlang/sdk" "0.36.4"
+    "@lix-js/fs" "2.2.0"
+    "@sinclair/typebox" "^0.31.17"
+    comment-json "^4.2.3"
+
 "@inlang/result@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@inlang/result/-/result-1.1.0.tgz#e6cb6b67e323bc57cad5b8e9419cff190f4ea522"
@@ -631,6 +665,54 @@
   version "0.36.3"
   resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-0.36.3.tgz#eb6f691e7280b344b131a5d99ef885c5ab267aa9"
   integrity sha512-wjsavc44H24v74tdEQ13FqZZcr43T106oEfHJnBLzEP55Zz2JJWABLund+DEdosZx+9E8mJBEW5JlVnlBwP3Zw==
+  dependencies:
+    "@inlang/json-types" "1.1.0"
+    "@inlang/language-tag" "1.5.1"
+    "@inlang/message" "2.1.0"
+    "@inlang/message-lint-rule" "1.4.7"
+    "@inlang/module" "1.2.14"
+    "@inlang/plugin" "2.4.14"
+    "@inlang/project-settings" "2.4.2"
+    "@inlang/result" "1.1.0"
+    "@inlang/translatable" "1.3.1"
+    "@lix-js/client" "2.2.1"
+    "@lix-js/fs" "2.2.0"
+    "@sinclair/typebox" "^0.31.17"
+    debug "^4.3.4"
+    dedent "1.5.1"
+    deepmerge-ts "^5.1.0"
+    murmurhash3js "^3.0.1"
+    solid-js "1.6.12"
+    throttle-debounce "^5.0.0"
+
+"@inlang/sdk@0.36.4":
+  version "0.36.4"
+  resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-0.36.4.tgz#645885265060ecea2348dd0062441380b09a6f38"
+  integrity sha512-fTr0mkDx2ViZt/8lxaF9Mxj3m8LaqIhcjMJy+CdHREMc9UvpUhGLB7elMp061YysxnN1CFccAgLRug5VWK3yWw==
+  dependencies:
+    "@inlang/json-types" "1.1.0"
+    "@inlang/language-tag" "1.5.1"
+    "@inlang/message" "2.1.0"
+    "@inlang/message-lint-rule" "1.4.7"
+    "@inlang/module" "1.2.14"
+    "@inlang/plugin" "2.4.14"
+    "@inlang/project-settings" "2.4.2"
+    "@inlang/result" "1.1.0"
+    "@inlang/translatable" "1.3.1"
+    "@lix-js/client" "2.2.1"
+    "@lix-js/fs" "2.2.0"
+    "@sinclair/typebox" "^0.31.17"
+    debug "^4.3.4"
+    dedent "1.5.1"
+    deepmerge-ts "^5.1.0"
+    murmurhash3js "^3.0.1"
+    solid-js "1.6.12"
+    throttle-debounce "^5.0.0"
+
+"@inlang/sdk@0.37.0":
+  version "0.37.0"
+  resolved "https://registry.yarnpkg.com/@inlang/sdk/-/sdk-0.37.0.tgz#e227fa924f8e6859b197d8b9c91c77eee5e95c4d"
+  integrity sha512-/uG/9HrJU+v5jY/nWKZAlI3diD8WdT5bAYuIZ3rVsnphvqV4iWvQwAp3H/K8F5QDJ+GEY79mhKfFhHcKMSiWng==
   dependencies:
     "@inlang/json-types" "1.1.0"
     "@inlang/language-tag" "1.5.1"
@@ -1507,6 +1589,11 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
+array-timsort@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/array-timsort/-/array-timsort-1.0.3.tgz#3c9e4199e54fb2b9c3fe5976396a21614ef0d926"
+  integrity sha512-/+3GRL7dDAGEfM6TseQk/U+mi18TU2Ms9I3UlLdUMhz2hbvGNTKdj9xniwXfUqgYhHxRx0+8UnKkvlNwVU+cWQ==
+
 astring@^1.8.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.9.0.tgz#cc73e6062a7eb03e7d19c22d8b0b3451fd9bfeef"
@@ -1826,6 +1913,15 @@ commander@11.1.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
   integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
 
+comment-json@^4.2.3:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/comment-json/-/comment-json-4.4.1.tgz#0757e3ba31a9e56f3f6e00bdaae114384ac8bcf3"
+  integrity sha512-r1To31BQD5060QdkC+Iheai7gHwoSZobzunqkf2/kQ6xIAfJyrKNAFUwdKvkK7Qgu7pVTKQEa7ok7Ed3ycAJgg==
+  dependencies:
+    array-timsort "^1.0.3"
+    core-util-is "^1.0.3"
+    esprima "^4.0.1"
+
 common-ancestor-path@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/common-ancestor-path/-/common-ancestor-path-1.0.1.tgz#4f7d2d1394d91b7abdf51871c62f71eadb0182a7"
@@ -1845,6 +1941,11 @@ cookie@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.7.2.tgz#556369c472a2ba910f2979891b526b3436237ed7"
   integrity sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==
+
+core-util-is@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
+  integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
 crc-32@1.2.2:
   version "1.2.2"
@@ -2126,7 +2227,7 @@ escape-string-regexp@^5.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
   integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
-esprima@^4.0.0:
+esprima@^4.0.0, esprima@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
@@ -4405,7 +4506,7 @@ typescript@5.2.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.2.tgz#5ebb5e5a5b75f085f22bc3f8460fba308310fa78"
   integrity sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==
 
-typescript@^5.5.3:
+typescript@^5.5.2, typescript@^5.5.3:
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
   integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
