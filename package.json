@@ -24,6 +24,6 @@
     "@rollup/rollup-linux-x64-musl": "4.9.5"
   },
   "devDependencies": {
-    "sass": "^1.80.6"
+    "sass": "^1.93.3"
   }
 }
